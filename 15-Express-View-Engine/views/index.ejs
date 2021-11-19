@@ -1,0 +1,28 @@
+
+<%- include('layouts/header') %> 
+<%- include('layouts/nav') %>
+<body>
+    
+
+        <h1>
+            <%= nama %>
+        </h1>
+        <% if (mahasiswa.length <1 ){ %> 
+       
+        daftar mahasiswa
+        <% } else { %> 
+        <% mahasiswa.forEach(mhs=> { %>
+
+            nama : <%= mhs.nama %>
+            nim : <%= mhs.nim %>
+        <br>
+        <% }) %>
+        <% } %> 
+
+
+  
+
+</body>
+<%- include('layouts/footer') %> 
+
+
