@@ -1,1 +1,20 @@
-[{"nama":"alif","nohp":"09"},{"nama":"alif","nohp":"noko"},{"nama":"alif","email":"niko","noHP":"08"},{"nama":"alif","email":"niko","noHP":"09"}]
+[
+    {
+        "nama": "alif",
+        "nohp": "09"
+    },
+    {
+        "nama": "alif",
+        "nohp": "noko"
+    },
+    {
+        "nama": "alif",
+        "email": "niko",
+        "noHP": "08"
+    },
+    {
+        "nama": "alif",
+        "email": "niko",
+        "noHP": "09"
+    }
+]
