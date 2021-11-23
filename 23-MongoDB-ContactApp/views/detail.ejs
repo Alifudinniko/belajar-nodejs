@@ -24,9 +24,14 @@
                                 <%= kontak.email %>
                             </p>
                             <a href="/kontak/edit/<%= kontak.nama %>" class="btn btn-info badge">Edit</a>
-                            <a href="/kontak/delete/<%= kontak.nama %>" class="btn btn-danger badge"
-                                onclick="return confirm('yakin?');">Delete</a>
-                            <a href="/kontak" class="card-link d-block mt-3">&laquo; Kembali ke Kontak</a>
+                            <!-- <a href="/kontak/delete/<%= kontak.nama %>" class="btn btn-danger badge"
+                                onclick="return confirm('yakin?');">Delete</a> -->
+                            <form action="/kontak?_method=DELETE" method="POST" class="d-inline">
+                                <input type="hidden" name="nama" value="<%= kontak.nama %>">
+                                <button type="submit" class="btn btn-danger badge"
+                                    onclick="return confirm('yakin?')">Hapus</button>
+                            </form>
+                            <a href=" /kontak" class="card-link d-block mt-3">&laquo; Kembali ke Kontak</a>
 
                         </div>
                         <% } %>

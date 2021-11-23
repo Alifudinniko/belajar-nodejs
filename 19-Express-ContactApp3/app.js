@@ -64,7 +64,7 @@ app.get('/kontak/add', (req, res) => {
     })
 })
 
-//Proses data kontak
+//Proses tambah data kontak
 app.post('/kontak',
     [
         body('nama').custom((value) => {

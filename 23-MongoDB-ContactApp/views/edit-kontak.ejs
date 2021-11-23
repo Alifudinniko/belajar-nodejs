@@ -13,8 +13,9 @@
                     </ul>
                 </div>
                 <% } %>
-                    <form method="post" action="/kontak/update">
+                    <form method="post" action="/kontak?_method=PUT">
                         <input type="hidden" name="oldNama" value="<%= kontak.oldNama || kontak.nama %>" />
+                        <input type="hidden" name="_id" value="<%= kontak._id %>">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama</label>
                             <input value="<%=kontak.nama %>" type="text" class="form-control" id="nama" name="nama"
